@@ -13,7 +13,7 @@ body {
   align-items: center;
   height: 100vh;
   font-size: 16px;
-  background-color: #121212;
+  background-color: #2a9d8f;
   font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
@@ -26,7 +26,7 @@ body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding: 15px;
-  background-color: #de3f53;
+  background-color: #e76f51;
   color: #fff;
   font-size: 1.3em;
 }
@@ -39,8 +39,8 @@ body {
 
 .wrapper-list ul.list li {
   position: relative;
-  background-color: #262e4c;
-  border-bottom: 1px solid #1c2340;
+  background-color: #264653;
+  border-bottom: 1px solid #264653;
   color: #b1b2c9;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ body {
 }
 
 .wrapper-list ul.list li:hover {
-  background-color: #323b5c;
+  background-color: #264653;
 }
 
 .wrapper-list ul.list li:hover button.remove {
@@ -77,7 +77,7 @@ body {
 
 .wrapper-list ul.list .check:hover,
 .wrapper-list ul.list .done .check {
-  background-color: #171d37;
+  background-color: #264653;
 }
 
 .wrapper-list ul.list .done .check:after {
@@ -117,12 +117,12 @@ body {
   display: block;
 }
 
-.todolist footer {
-  background-color: #171d37;
+.todolist main {
+  background-color: #264653;
 }
 
-.todolist footer input {
-  background-color: #171d37;
+.todolist main input {
+  background-color: #264653;
   border: none;
   outline: none;
   width: 90%;
@@ -132,11 +132,32 @@ body {
   color: white;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  padding: 1em;
+  color: rgb(214, 206, 206);
+  text-align: center;
+}
+
+footer img {
+  padding-left: 0.5em;
+  max-width: 1.5em;
+}
+
 @keyframes collapseItem {
   0% {
     transform: rotateX(0deg);
   }
   100% {
     transform: rotateX(-90deg);
+  }
+}
+
+@media (max-width: 648px) {
+  .todolist {
+    max-width: 80vw;
   }
 }
